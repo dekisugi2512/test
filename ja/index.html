@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OneHomes</title>
+<meta name="viewport" content="width=device-width">
+<meta name="author" content="POLS JAPAN" />
+<meta name="keywords" content="OneHomes, 民泊 OneHomes,OneHomes ホームステイ,日本 ホームステイ," />
+<meta name="description" content="OneHomes|交流からうまれる「オンリーワン」の体験を" />
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="OneHomes"/>
+<meta property="og:description" content="OneHomes|交流からうまれる「オンリーワン」の体験を" />
+<meta property="og:image" content="../img/ogg.png" />
+<meta property="og:url" content="サイトのURL" />
+<meta property="og:site_name" content="OneHomes"/>
+<meta content="summary" name="twitter:card" />
+<meta content="@twitter_acount" name="twitter:site" />
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" href="../img/icon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.min.css">
+<link rel="stylesheet" href="../css/normalize.min.css" />
+<link rel="stylesheet" href="../css/basic.css" />
+<link rel="stylesheet" href="../css/common.css" />
+<link rel="stylesheet" href="../css/modal_contents.css" />
+<link rel="stylesheet" href="../css/modal-multi.css" />
+<link rel="stylesheet" type="text/css" href="../css/slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css" media="screen" />
+
+<!-- <link href="../css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
+<link href="../css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="../css/top.css" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="../js/datepicker-ja.js"></script>
+<script type="text/javascript" src="../js/modal_contents.js"></script>
+<script type="text/javascript" src="../js/modal-multi.js"></script>
+<script type="text/javascript" src="../js/device.js"></script>
+<script type="text/javascript" src="../js/plugin.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="image logo"><a href="/onehomes_renewal/ja/"><img src="../img/logo.png" alt="OneHomes"></a></div>
+    <div class="language">
+      <ul>
+        <li class="on">JP</li>
+        <li class="off"><a href="/onehomes_renewal/en/">EN</a></li>
+      </ul>
+    </div>
+    <a class="menu-trigger modal_btn" data-target="menu"><div class="line"></div></a>
+    <div id="menu" class="modal-content">
+      <div class="MDL_window_wrap">
+        <ul>
+          <li><a href="/onehomes_renewal/ja/"><img src="../img/logo.png" alt="OneHomes"></a></li>
+          <li><a href="about/">OneHomesとは</a></li>
+          <li><a class="anchor" href="/onehomes_renewal/ja/index.html#stories">ホストファミリーストーリー</a></li>
+          <li><a href="magazine/">OneHomesマガジン</a></li>
+          <li><a href="faq/">よくある質問</a></li>
+          <li><a href="company/">運営会社</a></li>
+          <li><a href="contact/">お問い合わせ</a></li>
+        </ul>
+        <ul class="indent">
+          <li class="title">はじめての方へ</li>
+          <li><a href="guest/">ゲスト</a></li>
+          <li><a href="host/">ホストファミリー</a></li>
+        </ul>
+        <ul class="indent">
+          <li class="title">ログイン</li>
+          <li><a href="#">ゲスト</a></li>
+          <li><a href="#">ホストファミリー</a></li>
+        </ul>
+        <ul class="indent">
+          <li class="title">新規登録</li>
+          <li><a href="#">ゲスト</a></li>
+          <li><a href="#">ホストファミリー</a></li>
+        </ul>
+      </div>
+        <p class="closemodal"><a class="modal-close">×</a></p>
+    </div>
+  </header>
+  <div class="body">
+    <section class="kv">
+      <div class="image">
+        <img src="../img/kv.jpg" alt="交流からうまれる「オンリーワン」の体験を">
+      </div>
+      <h2 class="title">交流からうまれる<span>「オンリーワン」</span>の体験を</h2>
+    </section>
+    <section class="search">
+      <div class="search_inner">
+        <h3 class="title">あなたのHomeを探しましょう！</h3>
+        <form action="" method="post">
+        <div class="search_box first">
+          <div class="image"><img src="../img/map.png" alt="map"></div>
+          <input type="text" name="" value="" placeholder="エリアから探す">
+        </div>
+        <div class="flex">
+          <div class="search_box side">
+            <div class="image date"><img src="../img/calendar.png" alt="calendar"></div>
+            <input type="text" id="datepicker" data-language="ja" data-multiple-dates="3" data-multiple-dates-separator=" → " data-range="false" name="host[mddate]" placeholder="チェックイン">
+          </div>
+          <div class="search_box">
+            <div class="image date"><img src="../img/calendar.png" alt="calendar"></div>
+            <input type="text" id="datepicker2" data-language="ja" data-multiple-dates="3" data-multiple-dates-separator=" → " data-range="false" name="host[mddate]" placeholder="チェックアウト">
+          </div>
+        </div>
+        <div class="flex third">
+          <div class="search_box third side">
+            <select name="adult">
+              <option value="">大人システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+            </select>
+          </div>
+          <div class="search_box side">
+            <select name="child">
+              <option value="">子供システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+            </select>
+          </div>
+          <div class="search_box forth">
+            <select name="baby">
+              <option value="">乳幼児システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+              <option value="">システムに準ずる</option>
+            </select>
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit" name="button" class="search_icon">探す<div class="image"><img src="../img/glass.png" alt="虫眼鏡"></div></button>
+        </div>
+        </form>
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="about">「 <span><ruby>OneHomes<rt>ワンホームズ</rt></ruby></span> 」とは</h2>
+      <p class="subtitle space"><span>“日本のホームステイだけ”</span>にこだわった宿泊体験予約サイト</p>
+      <p class="subtitle">1泊から長期まで<br>
+        地元の人と出会えるホームステイを<br>
+        気軽に体験できます
+      </p>
+      <div class="image">
+        <img src="../img/top1.jpg" alt="ワンホームズ">
+      </div>
+      <a href="about/" class="btn1">もっと見る</a>
+    </section>
+    <section id="stories" class="stories">
+      <h2 class="title"><span>OneHomes Host Family Stories</span>あなたに会えるのを<br>楽しみにしています！</h2>
+      <ul class="top_slick slideshow">
+      <li class="slide">
+        <a href="stories/interview_1.html" class="one">
+          <img src="../img/stories1.jpg" alt="ラナさん一家">
+          <div class="sentence">
+            <p>ラナさん一家 / 千葉</p>
+            <p class="em">千葉であじわう、<br>インドのあったかいおもてなし</p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_2.html" class="two">
+          <img src="../img/stories2.jpg" alt="Nami & Asami">
+          <div class="sentence">
+            <p>Nami & Asami / 千葉</p>
+            <p class="em">野田市を元気にしたい！<br>
+            新米ホストが迎える外国の人との交流が生まれるDIYハウス
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_3.html" class="three">
+          <img src="../img/stories3.jpg" alt="kochan">
+          <div class="sentence">
+            <p>kochan/千葉</p>
+            <p class="em">新鮮な魚でおもてなし！<br>
+              英語が話せる漁師の<br>
+              Fisherman’s house Araking
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_4.html" class="four">
+          <img src="../img/stories4.jpg" alt="はまちゃん">
+          <div class="sentence">
+            <p>はまちゃん/神奈川県</p>
+            <p class="em">スペイン語勉強中！<br>
+              フレンドリーお母さんはまちゃんの<br>
+              Ida House
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_5.html" class="five">
+          <img src="../img/stories5.jpg" alt="黒澤永之亟">
+          <div class="sentence">
+            <p>黒澤永之亟/茨城県</p>
+            <p class="em">旅行に疲れたあなたに<br>
+              築90年の古民家で味わう、<br>
+              日本の農村生活
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_6.html" class="six">
+          <img src="../img/stories6.jpg" alt="さすらい船長と小明さん">
+          <div class="sentence">
+            <p>さすらい船長と小明さん/東京都</p>
+            <p class="em">海、花、自然と野菜が好きな人、<br>
+              一緒に日本の生活を楽しみましょう！
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_7.html" class="seven">
+          <img src="../img/stories7.jpg" alt="Mariさん・優子さん・アキラさん">
+          <div class="sentence">
+            <p>Mariさん・優子さん・アキラさん/埼玉県</p>
+            <p class="em">ゲストの要望に細かくこたえてくれる、<br>
+              一軒家貸し切り型の「ホームステイ」！
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_8.html" class="eight">
+          <img src="../img/stories8.jpg" alt="Masaruさん">
+          <div class="sentence">
+            <p>Masaruさん/東京都</p>
+            <p class="em">リピーター続出！<br>
+              ｢親せきのうちに泊まりに来たみたい｣な<br>
+              人気のChoop Khon Thai House
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_9.html" class="nine">
+          <img src="../img/stories9.jpg" alt="Shujiさん">
+          <div class="sentence">
+            <p>Shujiさん/神奈川県</p>
+            <p class="em">ジャズミュージシャンとランドスケープ<br>
+              アーキテクトの顔を持つホストが迎える、<br>
+              楽器OKの多国籍ガーデンハウス
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="slide">
+        <a href="stories/interview_10.html" class="ten">
+          <img src="../img/stories10.jpg" alt="Marilenaさん">
+          <div class="sentence">
+            <p>Marilenaさん/神奈川県</p>
+            <p class="em">箱根・鎌倉・江ノ島方面へ観光しながら、<br>
+              畳の部屋で日本文化体験を！
+            </p>
+          </div>
+        </a>
+      </li>
+     </ul>
+     <div class="bottom_line"></div>
+    </section>
+    <section class="point">
+      <h2 class="title"><i>OneHomes</i>の<br>3つのポイント</h2>
+      <ul>
+        <li>
+          <p class="title"><span>1</span>日本のホームステイ専門</p>
+          <p class="desc">旅を特別なものにするのは、地元の人とのあたたかい交流。
+            OneHomesは、あなたのもうひとつの家族ができるホームステイ型の家庭（民泊）のみを紹介しています。
+          </p>
+          <div class="image">
+            <img src="../img/top2.jpg" alt="日本のホームステイ専門">
+          </div>
+        </li>
+        <li>
+          <p class="title"><span>2</span>安心の合法民泊</p>
+          <p class="desc">国が定める民泊事業者*としての届出をしているホストのみを掲載。<br>
+            安心・快適な滞在を楽しめます。<br>
+            <span>※ 住宅宿泊事業法(民泊新法)上の「住宅宿泊事業者」</span>
+          </p>
+          <div class="image">
+            <img src="../img/top3.jpg" alt="安心の合法民泊">
+          </div>
+        </li>
+        <li>
+          <p class="title"><span>3</span>交流して、社会貢献</p>
+          <p class="desc">宿泊料金の2%が日本の被災地支援に寄付されます。<br>
+            ゲストと地域コミュニティのつながりもうまれます。<br>
+            <span>※宿泊料金(サービス手数料、消費税を除く)の合計が10,000円以上の場合</span>
+          </p>
+          <div class="image">
+            <img src="../img/top4.jpg" alt="交流して、社会貢献">
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="magazine">
+      <h2 class="title"><span>Read me!</span><i>OneHomes</i>マガジン</h2>
+      <ul>
+        <li>
+          <a href="">
+            <div class="image">
+              <img src="../img/dummy.png" alt="dummy">
+            </div>
+            <p>カテゴリ名</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="image">
+              <img src="../img/dummy.png" alt="dummy">
+            </div>
+            <p>カテゴリ名</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="image">
+              <img src="../img/dummy.png" alt="dummy">
+            </div>
+            <p>カテゴリ名</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="image">
+              <img src="../img/dummy.png" alt="dummy">
+            </div>
+            <p>カテゴリ名</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="image">
+              <img src="../img/dummy.png" alt="dummy">
+            </div>
+            <p>カテゴリ名</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="image">
+              <img src="../img/dummy.png" alt="dummy">
+            </div>
+            <p>カテゴリ名</p>
+          </a>
+        </li>
+      </ul>
+      <a href="magazine/" class="btn1">マガジン一覧を見る</a>
+    </section>
+    <section class="faq">
+      <h2 class="title">よくある質問</h2>
+      <ul>
+        <li>
+          <p class="question"><span>Q</span>質問が入ります</p>
+          <p class="answer"><span>A</span>答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります</p>
+        </li>
+        <li>
+          <p class="question"><span>Q</span>質問が入ります</p>
+          <p class="answer"><span>A</span>答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります</p>
+        </li>
+        <li>
+          <p class="question"><span>Q</span>質問が入ります</p>
+          <p class="answer"><span>A</span>答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります答えが入ります</p>
+        </li>
+      </ul>
+      <a href="faq/" class="btn1">もっと見る</a>
+    </section>
+    <section class="register">
+      <div class="image">
+        <img src="../img/top_back.jpg" alt="ホストファミリーになる">
+      </div>
+      <div class="link">
+        <p>あなたもホストファミリーとして<br>おうちで世界と<br>つながってみませんか？</p>
+        <a href="host/" class="btn2">ホストファミリーになる</a>
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    <div class="footer_first">
+      <a href="/onehomes_renewal/ja/"><div class="image"><img src="../img/logo.png" alt="OneHomes"></div></a>
+      <div class="footer_list">
+        <ul class="wide">
+          <li><a href="/onehomes_renewal/ja/">TOP</a></li>
+          <li><a href="about/">OneHomesとは</a></li>
+          <li><a class="anchor" href="/onehomes_renewal/ja/index.html#stories">ホストファミリーストーリー</a></li>
+          <li><a href="magazine/">OneHomesマガジン</a></li>
+          <li><a href="faq/">よくある質問</a></li>
+        </ul>
+        <ul>
+          <li><a href="company/">運営会社</a></li>
+          <li><a href="contact/">お問い合わせ</a></li>
+          <li class="title">はじめての方へ</li>
+          <li><a href="guest/">ゲスト</a></li>
+          <li><a href="host/">ホストファミリー</a></li>
+        </ul>
+        <ul class="wide">
+          <li class="title">ログイン</li>
+          <li><a href="#">ゲスト</a></li>
+          <li><a href="#">ホストファミリー</a></li>
+        </ul>
+        <ul>
+          <li class="title">新規登録</li>
+          <li><a href="#">ゲスト</a></li>
+          <li><a href="#">ホストファミリー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_second">
+      <a href="#">利用規約</a>
+      <a href="#">プライバシーポリシー</a>
+    </div>
+    <div class="footer_third">
+      <p>観光庁長官 (01) 第S0061号(2019年3月25日～2024年3月24日)
+      <span>Copyright © Senlimo Inc. All Rights Reserved.</span>
+    </p>
+    </div>
+  </footer>
+</body>
+</html>

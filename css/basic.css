@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+/*基本カラー#42A0CE*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script|Teko);
+/* リセット
+ ------------------------------------------*/
+header , div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: 500;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+font-family: "Noto Sans JP","Open Sans",'Yu Gothic', YuGothic, 游ゴシック体, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+@media only screen and (max-width:736px) {
+	header , div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+font-family: "Noto Sans JP","Open Sans",'Yu Gothic', YuGothic, 游ゴシック体, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	}
+}
+body{
+	margin:0;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+a:hover {
+	/* color: #333333; */
+	text-decoration: none;
+}
+a img, img {
+	border: 0;
+}
+blockquote, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, p, pre, span, td, th, ul {
+	margin: 0;
+	padding: 0;
+}
+abbr, acronym {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, th, strong, var {
+	font-style: normal;
+	/* font-weight: normal; */
+}
+caption, th {
+	text-align: left;
+}
+code, kbd, pre, samp, tt {
+	font-family: monospace;
+	line-height: 100%;
+}
+*+html code, kbd, pre, samp, tt {
+	font-size: 108%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: 500;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+q:before, q:after {
+	content: '';
+}
+button, fieldset, form, input, label, legend, /*select,*/ textarea {
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%; /*table-layout:fixed;*/
+}
+table td {
+	vertical-align: middle;
+}
+.right {
+	text-align:right;
+}
+.left {
+	text-align:left;
+}
+.pc{
+	display:inline-block;
+}
+.sp{
+	display:none;
+}
+@media only screen and (max-width:736px) {
+	.sp{
+	display:block !important;
+}
+.pc{
+	display:none !important;
+}
+}
+/* クリア
+ ------------------------------------------*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}

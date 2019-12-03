@@ -1,0 +1,452 @@
+.kv {
+    position: relative;
+    height: 250px;
+    padding: 0;
+}
+@media only screen and (max-width:535px) {
+.kv {
+    position: relative;
+    height: 130px;
+    padding: 0;
+}
+}
+/* FAQ */
+.kv.faq {
+    background: url(../img/faq_kv.jpg) top no-repeat;
+    background-size: cover;
+}
+.kv h2 {
+    position: absolute;
+    top: 35%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFF;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 10px #9D9D9D;
+}
+.kv h2 span{
+  font-size: 12px;
+  display: block;
+}
+.bread {
+    width: 100%;
+}
+.bread ul {
+    clear: both;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.bread li {
+    position: relative;
+    font-size: 11px;
+    font-family: 'Noto Sans JP', sans-serif;
+    float: left;
+    padding-right: 30px;
+}
+.bread li a {
+    padding: 15px 0;
+    display: block;
+}
+.bread li:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    right: 15px;
+    top: 42%;
+    display: block;
+}
+.bread li:last-child:after{
+  display: none;
+}
+.faq_content{
+    padding-top: 30px;
+}
+.faq_content h2.title{
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.faq_list{
+    margin: auto;
+    max-width: 800px;
+    padding: 0 0 20px 0;
+}
+.faq_list li{
+  padding: 10px 0;
+  border-bottom: 1px solid #D1D1D5;
+}
+h3.faq_title{
+  font-size: 20px;
+  font-weight: bold;
+  background: #FFE7E1;
+  padding: 10px;
+}
+h3.faq_title span{
+  font-size: 14px;
+  font-weight: bold;
+}
+/* .faq_list ul li p {
+    padding: 0px 0 0 30px;
+    text-indent: -35px;
+    line-height: 1.5;
+} */
+p.question {
+    position: relative;
+    font-size: 14px;
+    color: #23C5B0;
+    margin: 10px 0;
+    font-weight: bold;
+    padding: 0px 0 0 40px;
+    text-indent: -35px;
+    line-height: 1.5;
+    margin-right: 5%;
+    cursor: pointer;
+}
+p.question:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-top: solid 1px #23CCB7;
+  border-right: solid 1px #23CCB7;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  right: -2.5%;
+  top: 40%;
+  display: block;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+p.question.close:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+p.question span {
+    background: #23C5B0;
+    color: #FFF;
+    padding: 3px 9px 6px 9px;
+    border-radius: 30px;
+    font-size: 12px;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+.answer{
+  padding: 0 10px 0 40px;
+  margin: 20px 0 0 0;
+}
+.answer p{
+  position: relative;
+  font-size: 13px;
+}
+.mb30{
+  margin-bottom: 30px!important;
+}
+.answer p span{
+  position: absolute;
+  left: -35px;
+  background: #FFF;
+    color: #23C5B0;
+    border: 1px solid #23C5B0;
+    padding: 5px 9px 7px 9px;
+    border-radius: 30px;
+    font-size: 12px;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    line-height: 1;
+}
+.answer a {
+    font-size: 13px;
+    color: #003FFF;
+    text-decoration: underline;
+    margin: 15px 0 0 0;
+    display: block;
+}
+.answer p.mb30:last-child{
+  margin-bottom: 10px!important;
+}
+.answer p em{
+  font-weight: bold;
+  color: #FF7300;
+}
+.answer p i{
+    font-size: 11px;
+}
+.border{
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+.border.orange{
+    border: 1px solid #FF7300;
+}
+p.absolute{
+  text-align: center;
+  background: #FFE7E1;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 150px;
+  margin: 0 0 0 15%;
+}
+p.absolute:after{
+  content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #FFE7E1;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@media only screen and (max-width:600px) {
+  p.absolute{
+    text-align: center;
+    background: #FFE7E1;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 150px;
+    margin: auto;
+  }
+}
+.answer table{
+  margin: 0 0 30px 0;
+}
+.answer table th,.answer table td{
+  font-size: 13px;
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  text-align: center;
+  padding: 5px 10px;
+}
+.answer table th:last-child,.answer table td:last-child{
+  border-right: 1px solid #CCC;
+}
+.answer table tr:last-child td{
+  border-bottom: 1px solid #CCC;
+}
+.answer a.contact{
+    display: unset;
+    margin: 0;
+}
+/* お問い合わせ */
+.kv.contact {
+    background: url(../img/contact_kv.jpg) top no-repeat;
+    background-size: cover;
+}
+.contact_content{
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0px;
+}
+.contact_step p.title{
+  color: #575656;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact_step ul{
+  clear: both;
+  overflow: hidden;
+}
+.contact_step ul li{
+  position: relative;
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  text-align: center;
+}
+.contact_step ul li:after{
+  content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: -15px;
+    top: 42%;
+    display: block;
+}
+.contact_step ul li.done:after{
+  border-top: solid 1px #FF7300;
+  border-right: solid 1px #FF7300;
+}
+.contact_step ul li:first-child{
+  margin-left: 0;
+}
+.contact_step ul li:first-child:after{
+  display: none;
+}
+.contact_step li p{
+  font-size: 14px;
+  color: #CCCCCC;
+}
+.contact_step li p span{
+  font-size: 10px;
+  color: #CCCCCC;
+  display: block;
+}
+.contact_step li.done p, .contact_step li.done p span{
+  color: #FF7300;
+}
+.contact_table{
+  background: #F2F0EC;
+  width: 100%;
+  margin: 30px 0;
+}
+.contact_table th{
+  padding: 20px;
+  font-size: 14px;
+  display: block;
+}
+.contact_table tr{
+  display: block;
+  max-width: 800px;
+    margin: auto;
+}
+.contact_table tr:first-child{
+  padding: 10px 0 0 0;
+}
+.contact_table th span{
+  font-size: 11px;
+  color: #FFF;
+  padding: 3px 5px;
+  background: #FF3A00;
+  margin-left: 10px;
+}
+.contact_table td{
+  display: block;
+  padding: 0 20px;
+}
+.contact_table input, .contact_table textarea{
+    padding: 0 5px;
+    font-size: 14px;
+    border: none;
+    height: 35px;
+    width: calc(100% - 10px);
+}
+.contact_table textarea{
+  height: 100px;
+  margin: 0 0 30px 0;
+}
+.btn_area{
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+}
+.btn_area .btn1 {
+    padding: 10px 50px;
+    background: #FFF;
+}
+.btn_area.two{
+  width: fit-content;
+  max-width: 350px;
+  margin: auto;
+}
+.btn_area.two input{
+  float: left;
+}
+.btn3{
+  font-size: 15px;
+    padding: 11px 50px;
+    display: block;
+    color: #FFF;
+    background: #FF7300;
+    text-align: center;
+    border: none;
+    margin-left: 30px;
+}
+.complete{
+  background: #F2F0EC;
+  padding: 30px 0;
+  text-align: center;
+  margin: 30px 0;
+}
+.complete .image{
+  width: 25px;
+  margin: auto;
+}
+.btn_area.complete_btn .btn1 {
+    padding: 10px 0px;
+}
+.complete p.title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 30px 0;
+}
+.en .kv h2 {
+    top: 40%;
+}
+
+
+/* 運営会社 */
+.kv.company{
+    background: url(../img/company_kv.jpg) top no-repeat;
+    background-size: cover;
+}
+.company_content{
+  max-width: 600px;
+  padding: 30px 10px;
+  margin: auto;
+}
+h2.title{
+  font-size: 32px;
+  font-weight: bold;
+  color: #FF6400;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+.company_content p.subtitle{
+  text-align: center;
+  line-height: 1.8;
+}
+.company_content p.subtitle span{
+  position: relative;
+    margin: 6px 0 0 0;
+    display: inline-block;
+}
+.company_content p.subtitle span:after{
+  content: "センリーモ";
+  position: absolute;
+  left: 10%;
+  top: -8px;
+  font-size: 10px;
+}
+.company_table{
+  padding: 30px 0;
+}
+.company_table h3{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+.company_table table{
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+.company_table th{
+  padding: 10px 5px;
+  background: rgba(255,100,0,0.1);
+  text-align: left;
+  font-size: 13px;
+  line-height: 35px;
+  border-bottom: 1px solid #FFF;
+}
+.company_table td{
+  padding: 10px 5px;
+  font-size: 13px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
